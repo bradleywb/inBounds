@@ -1,0 +1,70 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 50px;
+}
+
+.container{
+	border: 1px solid #000000;
+	height: 300px;
+	width: 300px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+
+.box{
+	border: 1px solid #000000;
+	margin: 10px;
+	padding: 10px;
+}
+
+.in-bounds{
+	background-color: #00ff00;
+	position: relative;
+	float: left;
+}
+
+.out-of-bounds{
+	background-color: #ff0000;
+	position: absolute;
+}
+
+.out-top{
+	top: -20px;
+}
+
+.out-bottom{
+	bottom: -20px;
+}
+
+.out-top,
+.out-bottom{
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.out-left{
+	left: -20px;
+}
+
+.out-right{
+	right: -50px;
+}
+
+.out-left,
+.out-right{
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.out-super-sized{
+	top: -30px;
+	bottom: -30px;
+	left: -30px;
+	right: -30px;
+	z-index: -1;
+}

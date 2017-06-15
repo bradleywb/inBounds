@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>In-bounds</title>
+
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+
+		<script
+			type="text/javascript"
+			src="https://code.jquery.com/jquery-3.2.1.min.js"
+  			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  			crossorigin="anonymous"
+  		></script>
+  		<script type="text/javascript" src="../src/inBounds.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box in-bounds" data-detect></div>
+
+			<div class="box out-of-bounds out-top" data-detect></div>
+			<div class="box out-of-bounds out-right" data-detect></div>
+			<div class="box out-of-bounds out-bottom" data-detect></div>
+			<div class="box out-of-bounds out-left" data-detect></div>
+
+			<div class="box out-of-bounds out-super-sized" data-detect></div>
+		</div>
+<!--
+		<div class="box in-bounds"></div>
+
+		<div class="box out-of-bounds out-top"></div>
+		<div class="box out-of-bounds out-right"></div>
+		<div class="box out-of-bounds out-bottom"></div>
+		<div class="box out-of-bounds out-left"></div>
+-->
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
